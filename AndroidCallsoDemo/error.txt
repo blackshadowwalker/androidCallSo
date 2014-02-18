@@ -1,0 +1,21 @@
+
+-------------- Clean: Release in AndroidCallsoDemo (compiler: GNU ARM GCC Compiler)---------------
+
+Cleaned "AndroidCallsoDemo - Release"
+
+-------------- Build: Release in AndroidCallsoDemo (compiler: GNU ARM GCC Compiler)---------------
+
+arm-linux-androideabi-g++ -Wall -fexceptions  -O2 -fPIC    -I../android-ndk-r9c/platforms/android-14/arch-arm/usr/include  -c main.cpp -o obj/Release/main.o
+/home/haifeng/android/android-ndk-r9c/toolchains/arm-linux-androideabi-4.6/prebuilt/linux-x86/bin/../lib/gcc/arm-linux-androideabi/4.6/../../../../arm-linux-androideabi/bin/as: /lib/libz.so.1: no version information available (required by /home/haifeng/android/android-ndk-r9c/toolchains/arm-linux-androideabi-4.6/prebuilt/linux-x86/bin/../lib/gcc/arm-linux-androideabi/4.6/../../../../arm-linux-androideabi/bin/as)
+arm-linux-androideabi-g++ -shared -L../android-ndk-r9c/platforms/android-14/arch-arm/usr/lib -L/home/haifeng/android/android-ndk-r9c/platforms/android-14/arch-arm/usr/lib  obj/Release/main.o   -o bin/Release/libAndroidCallsoDemo.so -s  
+/home/haifeng/android/android-ndk-r9c/toolchains/arm-linux-androideabi-4.6/prebuilt/linux-x86/bin/../lib/gcc/arm-linux-androideabi/4.6/../../../../arm-linux-androideabi/bin/ld: error: cannot open crtbegin_so.o: No such file or directory
+/home/haifeng/android/android-ndk-r9c/toolchains/arm-linux-androideabi-4.6/prebuilt/linux-x86/bin/../lib/gcc/arm-linux-androideabi/4.6/../../../../arm-linux-androideabi/bin/ld: error: cannot open crtend_so.o: No such file or directory
+collect2: ld returned 1 exit status
+Process terminated with status 1 (0 minutes
+
+
+cd /home/xxx/android/AndroidCallsoDemo/
+ln -s /home/xxx/android/android-ndk-r9c/platforms/android-14/arch-arm/usr/lib/crtend_so.o ./
+ln -s /home/xxx/android/android-ndk-r9c/platforms/android-14/arch-arm/usr/lib/crtbegin_so.o ./
+
+

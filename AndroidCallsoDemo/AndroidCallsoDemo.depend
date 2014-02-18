@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1392660914 source:/home/haifeng/android/AndroidCallsoDemo/main.cpp
+	"stdio.h"
+	"com_lpr_JniTestAndroid.h"
+
+1392660722 /home/haifeng/android/AndroidCallsoDemo/com_lpr_JniTestAndroid.h
+	"jni.h"
+
+1364808026 /home/haifeng/android/AndroidCallsoDemo/jni.h
+	<stdio.h>
+	<stdarg.h>
+	"jni_md.h"
+
+1392274425 /home/haifeng/android/AndroidCallsoDemo/jni_md.h
+
